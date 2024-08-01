@@ -1,0 +1,68 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 30px;
+  font-weight: bolder;
+  color: white;
+  background-color: transparent;
+  border-width: 0px;
+
+  position: relative;
+  z-index: 33;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+.active {
+  background: #ff6f00;
+
+  border-radius: 3px;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1); */
+}
+
+@media screen and (min-width: 728px) {
+  .boxAppContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .tabs {
+    width: 90%;
+  }
+  .tab {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #btnLogout {
+    margin: 0px;
+    /* position: absolute; */
+  }
+  .app-box {
+    height: 96%;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .tabs {
+    width: 100%;
+  }
+  .tab {
+    font-size: 11px;
+  }
+  #btnLogout {
+    font-size: 11px;
+  }
+}
+
+#btnLogout {
+  margin: 0px;
+}
